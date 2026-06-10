@@ -1,0 +1,25 @@
+{
+	"name": "@denveous/pi-safedelete",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "safedelete.ts",
+	"description": "Pi Extension: Confirmation gate for delete/write commands in bash tool calls",
+	"license": "MIT",
+	"keywords": ["pi-package", "pi", "safe-delete", "extension"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Denveous/pi-mono-exts.git",
+		"directory": "pi-safedelete"
+	},
+	"pi": {
+		"extensions": ["./safedelete.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": ">=0.75.0"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		}
+	}
+}

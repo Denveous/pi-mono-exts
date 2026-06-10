@@ -1,0 +1,26 @@
+{
+	"name": "@denveous/pi-superpowers",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.ts",
+	"description": "Pi Extension: Superpowers development methodology - brainstorming, TDD, systematic debugging, subagent-driven development, and more",
+	"license": "MIT",
+	"keywords": ["pi-package", "pi", "superpowers", "skills", "tdd", "debugging", "methodology"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Denveous/pi-mono-exts.git",
+		"directory": "pi-superpowers"
+	},
+	"pi": {
+		"extensions": ["./index.ts"],
+		"skills": ["./skills"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": ">=0.75.0"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		}
+	}
+}

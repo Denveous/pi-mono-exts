@@ -1,0 +1,33 @@
+{
+	"name": "@denveous/pi-filesystem",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.ts",
+	"description": "Pi Extension: Native filesystem tools - read, write, edit, delete, move, copy, search, tree, and more",
+	"license": "MIT",
+	"keywords": ["pi-package", "pi", "filesystem", "extension"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Denveous/pi-mono-exts.git",
+		"directory": "pi-filesystem"
+	},
+	"pi": {
+		"extensions": ["./index.ts"]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": ">=0.75.0",
+		"@earendil-works/pi-ai": ">=0.75.0",
+		"@earendil-works/pi-tui": ">=0.75.0"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		},
+		"@earendil-works/pi-ai": {
+			"optional": true
+		},
+		"@earendil-works/pi-tui": {
+			"optional": true
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "gpt-buddy",
+  "version": "1.0.8",
+  "description": "Pi extension: monitor ChatGPT/Codex usage quota",
+  "main": "gpt-buddy.ts",
+  "type": "module",
+  "license": "MIT",
+  "author": "Denveous",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denveous/pi-mono-exts.git",
+    "directory": "gpt-buddy"
+  },
+  "keywords": ["pi-package", "pi", "extension", "quota"],
+  "pi": {
+    "extensions": ["gpt-buddy.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  }
+}

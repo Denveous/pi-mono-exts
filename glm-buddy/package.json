@@ -1,0 +1,41 @@
+{
+	"name": "glm-buddy",
+	"version": "1.1.5",
+	"description": "Pi extension: Rate-limits GLM model usage during z.ai peak hours (14:00-18:00 UTC+8) to prevent token burn",
+	"main": "glm-buddy.ts",
+	"type": "module",
+	"keywords": [
+		"pi-package",
+		"glm",
+		"zai",
+		"rate-limit"
+	],
+	"pi": {
+		"extensions": [
+			"./glm-buddy.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-agent-core": "*",
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"peerDependenciesMeta": {
+		"@earendil-works/pi-ai": {
+			"optional": true
+		},
+		"@earendil-works/pi-agent-core": {
+			"optional": true
+		},
+		"@earendil-works/pi-coding-agent": {
+			"optional": true
+		}
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Denveous/pi-mono-exts.git",
+		"directory": "glm-buddy"
+	},
+	"author": "denveous"
+}

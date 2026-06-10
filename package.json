@@ -1,24 +1,60 @@
 {
-  "name": "pi-mcp",
-  "version": "0.1.0",
-  "description": "MCP client extension for pi agent",
-  "main": "index.ts",
+  "name": "@denveous/pi-mono-exts",
+  "version": "1.0.0",
+  "description": "A collection of Pi extensions and skills by Denveous.",
   "type": "module",
-  "keywords": ["pi-package"],
+  "license": "MIT",
+  "author": "Denveous",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denveous/pi-mono-exts.git"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "extensions",
+    "skills"
+  ],
   "pi": {
-    "extensions": ["./index.ts"]
+    "extensions": [
+      "./compact-buddy/compact-buddy.ts",
+      "./glm-buddy/glm-buddy.ts",
+      "./gpt-buddy/gpt-buddy.ts",
+      "./opencode-pi/opencode-pi.ts",
+      "./pi-filesystem/index.ts",
+      "./pi-mcp/index.ts",
+      "./pi-safedelete/safedelete.ts",
+      "./pi-superpowers/index.ts"
+    ],
+    "skills": [
+      "./pi-superpowers/skills"
+    ]
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0"
   },
   "peerDependencies": {
-    "@mariozechner/pi-ai": "*",
-    "@mariozechner/pi-agent-core": "*",
-    "@mariozechner/pi-coding-agent": "*",
-    "@mariozechner/pi-tui": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*",
     "typebox": "*"
   },
-  "license": "MIT",
-  "repository": "https://github.com/Denveous/pi-mcp",
-  "author": "denveous"
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-ai": {
+      "optional": true
+    },
+    "@earendil-works/pi-agent-core": {
+      "optional": true
+    },
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "@earendil-works/pi-tui": {
+      "optional": true
+    },
+    "typebox": {
+      "optional": true
+    }
+  }
 }
