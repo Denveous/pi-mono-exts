@@ -131,7 +131,7 @@ export default function glmBuddy(pi: ExtensionAPI) {
 		if (!inPeak) peakMessages = 0;
 		await fetchQuota(ctx);
 		if (pollTimer) clearInterval(pollTimer);
-		pollTimer = setInterval(async () => { try { await fetchQuota(ctx); } catch { if (pollTimer) { clearInterval(pollTimer); pollTimer = null; } } }, 15 * 1000);
+		pollTimer = setInterval(async () => { try { await fetchQuota(ctx); } catch { if (pollTimer) { clearInterval(pollTimer); pollTimer = null; } } }, 180 * 1000);
 		updateStatus(ctx);
 	});
 

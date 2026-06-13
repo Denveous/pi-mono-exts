@@ -74,7 +74,7 @@ export default function gptBuddy(pi: ExtensionAPI) {
 	pi.on("session_start", async (_event, ctx) => {
 		await fetchQuota(ctx);
 		if (pollTimer) clearInterval(pollTimer);
-		pollTimer = setInterval(async () => { try { await fetchQuota(ctx); } catch { if (pollTimer) { clearInterval(pollTimer); pollTimer = null; } } }, 15 * 1000);
+		pollTimer = setInterval(async () => { try { await fetchQuota(ctx); } catch { if (pollTimer) { clearInterval(pollTimer); pollTimer = null; } } }, 180 * 1000);
 		updateStatus(ctx);
 	});
 	pi.on("session_shutdown", () => {
